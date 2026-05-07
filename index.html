@@ -1,1 +1,44 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="KqDqpldTqndAELl8IZikPfyT0GGQj1fLo2f11PJeX5I"><title>戚祐寧 Samuel Chi</title><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"><link href="/css/app.6675ece3.css" rel="preload" as="style"><link href="/css/chunk-vendors.bdfd593e.css" rel="preload" as="style"><link href="/js/app.8ce8e45f.js" rel="preload" as="script"><link href="/js/chunk-vendors.2d94eaed.js" rel="preload" as="script"><link href="/css/chunk-vendors.bdfd593e.css" rel="stylesheet"><link href="/css/app.6675ece3.css" rel="stylesheet"></head><body oncontextmenu="return false" onselectstart="return false" ondragstart="return false"><div id="app"></div><script src="/js/chunk-vendors.2d94eaed.js"></script><script src="/js/app.8ce8e45f.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>戚祐寧 · Samuel Chi</title>
+
+  <!-- Google Fonts 預連線，降低字體載入延遲 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!--
+    載入三種字體：
+    - Inter：英文主要字體，現代無襯線設計
+    - Noto Sans TC：中文字體，與 Inter 搭配良好
+    - JetBrains Mono：等寬字體，用於終端機/代碼區塊
+  -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.1：提供社群媒體、信封等圖示（footer 社群連結使用） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script type="module" crossorigin src="/assets/index-uCLCSONh.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CAjO2ZWu.css">
+</head>
+<body>
+  <!--
+    動態漸層背景層（固定定位，z-index: -1）
+    包含四個模糊色塊（blob）做流動動畫，以及雜訊紋理（grain）
+    這個 div 刻意放在 #app 外層，避免被 Vue 重新渲染影響效能
+  -->
+  <div id="gradient-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- Vue 3 掛載點：App.vue 的內容會渲染在此 div 內 -->
+  <div id="app"></div>
+
+  <!-- Vite 入口：type="module" 啟用 ES Module，開發時走 HMR，生產時走打包 -->
+</body>
+</html>
