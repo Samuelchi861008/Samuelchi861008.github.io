@@ -8,19 +8,17 @@
   <!-- Google Fonts 預連線，降低字體載入延遲 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!--
-    載入三種字體：
-    - Inter：英文主要字體，現代無襯線設計
-    - Noto Sans TC：中文字體，與 Inter 搭配良好
-    - JetBrains Mono：等寬字體，用於終端機/代碼區塊
-  -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6.5.1：只載入需要的子集（brands + regular），略過 solid/duotone 等未使用圖示集 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css" />
 
-  <!-- Font Awesome 6.5.1：提供社群媒體、信封等圖示（footer 社群連結使用） -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <script type="module" crossorigin src="/assets/index-D3y5ZjK-.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-UhZkDrJa.css">
+  <!-- Hero 個人照是 LCP 元素，提前 preload 加快首屏渲染 -->
+  <link rel="preload" as="image" href="/img/main_img.JPG">
+  <script type="module" crossorigin src="/assets/index-D0WeCLjt.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BdVGhkdt.css">
 </head>
 <body>
   <!--
